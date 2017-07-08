@@ -1,0 +1,110 @@
+
+
+div#content-placeholder.home {
+  //@extend .section;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+
+  div.home-content-container {
+    //@extend .section;
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    main {
+      //@extend .section;
+
+      div.mobile.students-list {
+        display: block;
+
+        div.student {
+          margin-bottom: 20px;
+        }
+      }
+
+      div.desktop.students-list {
+        display: none;
+      }
+    }
+
+    sidebar {
+      //@extend .section;
+      //height: 100%;
+      //width: 100%;
+      background-color: #ceed9c;
+
+      padding: 10px;
+      text-align: left;
+
+      div {
+        margin-bottom: 20px;
+      }
+    }
+
+
+  }
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  /*body {*/
+  /*background-color: #B2D6FF; /!* Blue *!/*/
+  /*}*/
+
+  div.container {
+
+    div#content-placeholder.home {
+
+
+
+      div.home-content-container {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        main {
+          width: 70%;
+
+          div.mobile.students-list {
+            display: none;
+          }
+
+          div.desktop.students-list {
+            display: block;
+
+            table {
+
+              th, td {
+                text-align: center;
+              }
+
+            }
+
+          }
+        }
+
+        sidebar {
+          width: 30%;
+          height: 84vh;
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+}
+
+

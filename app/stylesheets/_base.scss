@@ -1,0 +1,36 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+//  mixin demonstration
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+
+
+.section {
+  width: 100%;
+  height: 100%;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: #4298f4;
+}
+
+h3 {
+  //  overriding bootstrap
+  margin-bottom: 3px;
+}

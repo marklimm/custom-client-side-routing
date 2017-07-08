@@ -1,0 +1,20 @@
+{
+  "students": [
+    {
+      "firstName": "Harry",
+      "lastName": "Potter",
+      "age": 16,
+      "house": "Gryffindor"
+    },
+    {
+      "firstName": "Ronald",
+      "lastName": "Weasley",
+      "age": 16,
+      "house": "Gryffindor"
+    }
+
+
+  ]
+
+
+}

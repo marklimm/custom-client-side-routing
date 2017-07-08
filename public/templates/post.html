@@ -1,0 +1,61 @@
+
+
+<main>
+
+    <div class="desktop post-placeholder"></div>
+
+    <div class="desktop post-responses responses-placeholder"></div>
+
+</main>
+
+
+<script id="post-desktop-template" type="text/x-handlebars-template">
+
+
+
+
+    <div class="post-div">
+
+        <h3>
+            {{title}}
+        </h3>
+
+        <div>{{description}}</div>
+
+        Posted by: <a href="#" class="author">{{author}}</a>
+        <span class="timestamp">{{formatDate timestamp}}</span>
+
+
+
+
+
+    </div>
+
+
+</script>
+
+
+<script id="posts-list-desktop-template" type="text/x-handlebars-template">
+
+
+
+    {{#each .}}
+    <div class="post-div">
+
+        <h3>
+            <a href="/post/{{id}}" class="title">{{title}}</a>
+        </h3>
+
+        <div>{{description}}</div>
+        Posted by: <a href="#" class="author">{{author}}</a>
+
+        <span class="timestamp">{{formatDate timestamp}}</span>
+
+    </div>
+
+    {{/each}}
+
+
+</script>
+
+

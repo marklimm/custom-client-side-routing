@@ -1,0 +1,28 @@
+
+
+
+div#content-placeholder.carousel {
+
+  main {
+    //@extend .section;
+
+    background-color: darkseagreen;
+
+
+    div.slick-slider {
+      margin: 30px 30px;
+      width: 50%;
+
+      div.slick-slide {
+        background: #fff;
+        color: #3498db;
+        font-size: 1.4em;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        min-height: 15vh;
+      }
+    }
+  }
+
+}

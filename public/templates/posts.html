@@ -1,0 +1,43 @@
+
+
+    <main>
+
+        <div class="desktop posts-placeholder"></div>
+
+
+    </main>
+
+
+
+    <script id="posts-list-desktop-template" type="text/x-handlebars-template">
+
+
+
+        {{#each .}}
+        <div class="post-div">
+
+            <h3>
+            <a href="/post/{{id}}" class="title">{{title}}</a>
+            </h3>
+
+            <div >Tags: <span class="tags">{{arrayToString tags}}</span></div>
+
+            <div>{{description}}</div>
+            Posted by: <a href="#" class="author">{{author}}</a>
+
+            <span class="timestamp">{{formatDate timestamp}}</span>
+
+
+
+        </div>
+
+        {{/each}}
+
+
+    </script>
+
+    <!--<script type="text/javascript" src="js/util/hbUtil.js"></script>-->
+    <!--<script type="text/javascript" src="js/util/locationUrl.js"></script>-->
+
+    <!--<script type="text/javascript" src="js/board/script.js"></script>-->
+

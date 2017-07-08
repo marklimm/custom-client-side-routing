@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.section, html, body, div.container {
+  width: 100%;
+  height: 100%; }
+
+a, a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: #4298f4; }
+
+h3 {
+  margin-bottom: 3px; }
+
+html, body {
+  background-color: #eff2f2; }
+
+div.container {
+  display: flex;
+  flex-direction: column; }
+  div.container nav {
+    min-height: 175px;
+    background-color: #edfcff;
+    display: flex;
+    flex-direction: column; }
+    div.container nav a {
+      margin-bottom: 10px; }
+  div.container div#content-and-footer {
+    flex: 1;
+    position: relative; }
+    div.container div#content-and-footer div#content-placeholder {
+      min-height: 84vh;
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1; }
+      div.container div#content-and-footer div#content-placeholder main {
+        padding: 15px; }
+    div.container div#content-and-footer footer {
+      height: 10vh;
+      background-color: blanchedalmond;
+      clear: both;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  /*body {*/
+  /*background-color: #B2D6FF; /!* Blue *!/*/
+  /*}*/
+  div.container {
+    width: 960px;
+    margin: 0 auto; }
+    div.container nav {
+      min-height: 50px;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      div.container nav a {
+        margin-bottom: 0px; } }
+div#content-placeholder.home {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  div#content-placeholder.home div.home-content-container {
+    display: flex;
+    flex-direction: column; }
+    div#content-placeholder.home div.home-content-container main div.mobile.students-list {
+      display: block; }
+      div#content-placeholder.home div.home-content-container main div.mobile.students-list div.student {
+        margin-bottom: 20px; }
+    div#content-placeholder.home div.home-content-container main div.desktop.students-list {
+      display: none; }
+    div#content-placeholder.home div.home-content-container sidebar {
+      background-color: #ceed9c;
+      padding: 10px;
+      text-align: left; }
+      div#content-placeholder.home div.home-content-container sidebar div {
+        margin-bottom: 20px; }
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  /*body {*/
+  /*background-color: #B2D6FF; /!* Blue *!/*/
+  /*}*/
+  div.container div#content-placeholder.home div.home-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    div.container div#content-placeholder.home div.home-content-container main {
+      width: 70%; }
+      div.container div#content-placeholder.home div.home-content-container main div.mobile.students-list {
+        display: none; }
+      div.container div#content-placeholder.home div.home-content-container main div.desktop.students-list {
+        display: block; }
+        div.container div#content-placeholder.home div.home-content-container main div.desktop.students-list table th, div.container div#content-placeholder.home div.home-content-container main div.desktop.students-list table td {
+          text-align: center; }
+    div.container div#content-placeholder.home div.home-content-container sidebar {
+      width: 30%;
+      height: 84vh; } }
+div#content-placeholder.carousel main {
+  background-color: darkseagreen; }
+  div#content-placeholder.carousel main div.slick-slider {
+    margin: 30px 30px;
+    width: 50%; }
+    div#content-placeholder.carousel main div.slick-slider div.slick-slide {
+      background: #fff;
+      color: #3498db;
+      font-size: 1.4em;
+      margin: 10px;
+      padding: 15px;
+      text-align: center;
+      min-height: 15vh; }
+
+div.post-div {
+  margin-bottom: 6vh; }
+  div.post-div span.timestamp {
+    color: #999999;
+    font-style: italic;
+    margin-left: 5vw; }
+
+div#content-placeholder.posts h3 a.title {
+  color: #4298f4; }
+div#content-placeholder.posts span.tags {
+  font-weight: bold; }
+
+div#content-placeholder.post div.post-div {
+  margin-bottom: 4vh; }
+div#content-placeholder.post div.post-responses {
+  padding-left: 2vw;
+  padding-right: 15vw;
+  padding-top: 2vh; }
+
+div.schedule {
+  width: 100%; }
+  div.schedule div.weekRow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    div.schedule div.weekRow div.hourBlock {
+      background-color: #e0e2e5;
+      flex: 2;
+      height: 100px;
+      border: solid 1px #b8babc; }
+    div.schedule div.weekRow div.sidebar {
+      background-color: #ffffff;
+      flex: 1;
+      padding: 5px;
+      text-align: right; }
+      div.schedule div.weekRow div.sidebar h1 {
+        margin-top: 0;
+        font-size: 1.5em; }
+
+/*# sourceMappingURL=style.css.map */

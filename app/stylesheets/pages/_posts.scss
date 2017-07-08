@@ -1,0 +1,49 @@
+
+
+//  I should create a SASS variable or function for this
+div.post-div {
+  //background-color: #f9f6ed;
+  //box-shadow: 3px 3px 2px #e0e1e2;
+  margin-bottom: 6vh;
+
+  a:link.author {
+    //color: #4298f4;
+
+  }
+
+  span.timestamp {
+    color: #999999;
+    //font-size: 0.9em;
+    font-style: italic;
+
+    margin-left: 5vw;
+  }
+
+}
+
+
+div#content-placeholder.posts {
+
+  h3 a.title {
+    color: #4298f4;
+  }
+
+  span.tags {
+    font-weight: bold;
+  }
+}
+
+div#content-placeholder.post {
+
+  div.post-div {
+
+    margin-bottom: 4vh;
+  }
+
+  div.post-responses {
+    padding-left: 2vw;
+    padding-right: 15vw;
+    padding-top: 2vh;
+  }
+
+}

@@ -1,0 +1,85 @@
+
+
+<div class="home-content-container">
+
+    <main>
+
+
+        <div class="mobile students-list">
+
+        </div>
+
+        <div class="desktop students-list">
+        </div>
+    </main>
+
+    <sidebar>
+
+        <div>
+            this is a short blurb
+        </div>
+
+
+        <div>
+            this is a short blurb - just more stuff right here
+        </div>
+
+
+    </sidebar>
+
+</div>
+
+<script id="student-table-header-template" type="text/x-handlebars-template">
+
+    <thead>
+    <tr>
+        <th>First</th>
+        <th>Last</th>
+        <th>Age</th>
+        <th>House</th>
+    </tr>
+    </thead>
+
+
+</script>
+
+
+<script id="students-list-desktop-template" type="text/x-handlebars-template">
+
+    <table class="table">
+
+        {{> studentTableHeader }}
+
+        <tbody>
+
+        {{#each .}}
+
+        <tr>
+            <td>{{firstName}}</td>
+            <td>{{lastName}}</td>
+            <td>{{age}}</td>
+            <td>{{house}}</td>
+        </tr>
+
+        {{/each}}
+
+        </tbody>
+    </table>
+</script>
+
+
+
+<script id="students-list-mobile-template" type="text/x-handlebars-template">
+
+
+    {{#each .}}
+
+    <div class="student">
+        {{firstName}} {{lastName}}<br />
+        Age: {{age}}<br />
+        House: {{house}}
+    </div>
+
+    {{/each}}
+
+</script>

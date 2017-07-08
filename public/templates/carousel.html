@@ -1,0 +1,77 @@
+
+
+
+<main>
+
+    <h2>this is the carousel page</h2>
+
+
+
+
+    <div class="your-class">
+        <div>your content 1</div>
+        <div>your content 2</div>
+        <div>your content 3</div>
+        <div>your content 4</div>
+        <div>your content 5</div>
+        <div>your content 6</div>
+    </div>
+
+
+
+    <div class="desktop carousel-placeholder"></div>
+
+
+</main>
+
+
+
+<script id="posts-list-desktop-template" type="text/x-handlebars-template">
+
+
+
+    {{#each .}}
+    <div class="post">
+
+        <h3>
+            <a href="/board/{{id}}" class="title">{{title}}</a>
+        </h3>
+
+        <div>{{description}}</div>
+        Posted by: <a href="#" class="author">{{author}}</a>
+
+        <span class="timestamp">{{formatDate timestamp}}</span>
+
+    </div>
+
+    {{/each}}
+
+
+</script>
+
+
+<script id="post-desktop-template" type="text/x-handlebars-template">
+
+
+
+
+    <div class="post">
+
+        <h2>
+            {{title}}
+        </h2>
+
+        Posted by: <a href="#" class="author">{{author}}</a>
+        <span class="timestamp">{{formatDate timestamp}}</span>
+
+        <div>{{description}}</div>
+
+
+
+    </div>
+
+
+</script>
+
+
+

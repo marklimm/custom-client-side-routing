@@ -1,0 +1,156 @@
+
+html, body {
+  @extend .section;
+
+  background-color: #eff2f2;
+}
+
+
+div.container{
+  //text-align: center;
+  @extend .section;
+
+  display: flex;
+
+  flex-direction: column;
+
+
+  //header {
+  //  @extend .section;
+  //
+  //  min-height: 130px;
+  //  background-color: beige;
+  //
+  //
+  //}
+
+  nav {
+
+    min-height: 175px;
+    background-color: #edfcff;
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    a {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  div#content-and-footer{
+    flex: 1;
+    position: relative;
+
+    div#content-placeholder {
+      //@extend .section;
+      min-height: 84vh;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+
+      //overflow: auto;
+
+      main {
+        //@extend .section;
+        //min-height: 80vh;
+        //height: 100%;
+        padding: 15px;
+
+
+      }
+
+    }
+
+    footer {
+      //@extend .section;
+      //
+      //position: absolute;
+      //right: 0;
+      //bottom: 0;
+      //left: 0;
+      //padding: 1rem;
+
+
+
+      //height: 100px;
+      height: 10vh;
+      background-color: blanchedalmond;
+
+
+      clear: both;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      //
+      //div.left { width: 33%; }
+      //div.center { flex: 1 }
+      //div.right { width: 33%; text-align: right; }
+    }
+
+
+  }
+
+
+}
+
+
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  /*body {*/
+  /*background-color: #B2D6FF; /!* Blue *!/*/
+  /*}*/
+
+  div.container {
+    width: 960px;
+    margin: 0 auto;
+
+
+    nav{
+
+      min-height: 50px;
+
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+
+      //justify-content: space-around;
+      //align-items: center;
+
+
+      a {
+        margin-bottom: 0px;
+      }
+
+    }
+
+
+  }
+
+
+  //.feature-1,
+  //.feature-2,
+  //.feature-3 {
+  //  width: 33.3%;
+  //}
+  //.header {
+  //  height: 400px;
+  //}
+  //
+  //.sign-up {
+  //  height: 200px;
+  //  order: 1;
+  //}
+  //.content {
+  //  order: 2;
+  //}
+}
+
+
